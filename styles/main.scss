@@ -1,5 +1,5 @@
-@use '../../../../src/.vizality/lib/sass/functions' as *;
-@use '../../../../src/.vizality/lib/sass/mixins' as *;
+//@use '../../../../src/.vizality/lib/sass/functions' as *;
+@use './mixins' as *;
 
 :root {
   --members-activity-icon-size: 24px;
@@ -8,8 +8,8 @@
 
 .membersWrap-2h-GB4 {
   .channel-members-activity-icon {
-    @include size(var('members-activity-icon-size'));
-    border-radius: var('members-activity-border-radius');
+    @include size(var(--members-activity-icon-size));
+    border-radius: var(--members-activity-border-radius);
     margin-left: 5px;
     background-repeat: no-repeat;
     background-position: center;
